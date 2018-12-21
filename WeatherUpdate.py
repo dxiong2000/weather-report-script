@@ -19,5 +19,6 @@ client = boto3.client('sns','us-east-1')
 phoneNumber = #phonenumber
 message = summary
 
-for i in range(0, 10):
-	client.publish(PhoneNumber=phoneNumber, Message=message)
+
+client.publish(PhoneNumber=phoneNumber, Message=message)
+#git test
