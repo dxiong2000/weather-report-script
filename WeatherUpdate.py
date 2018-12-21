@@ -14,10 +14,10 @@ data = apiResponse.json()
 summary = 'The temperature is %s with a high of %s and a low of %s' % (data['currently']['temperature'], data['daily']['data'][0]['temperatureHigh'], data['daily']['data'][0]['temperatureLow'])
 
 
-
 client = boto3.client('sns','us-east-1')
 
 phoneNumber = #phonenumber
 message = summary
 
-client.publish(PhoneNumber=phoneNumber, Message=message)
+for i in range(0, 10):
+	client.publish(PhoneNumber=phoneNumber, Message=message)
