@@ -21,3 +21,4 @@ phoneNumber = #phonenumber
 message = summary
 
 client.publish(PhoneNumber=phoneNumber, Message=message)
+#git test
